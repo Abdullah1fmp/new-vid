@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Course" ADD COLUMN     "avg_rating" DOUBLE PRECISION NOT NULL DEFAULT 0;

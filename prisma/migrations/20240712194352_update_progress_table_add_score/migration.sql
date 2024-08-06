@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Progress" ADD COLUMN     "score" DOUBLE PRECISION NOT NULL DEFAULT 100;
