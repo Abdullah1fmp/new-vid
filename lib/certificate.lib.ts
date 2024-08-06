@@ -38,9 +38,7 @@ export const generate_certificate = async ({
     // Generate certificate logic here
     const project_root_path = path.resolve();
 
-    const browser = await puppeteer.launch({
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
+    const browser = await puppeteer.connect({ browserWSEndpoint: process.env.BROWSER_WS_ENDPOINT });
     const page = await browser.newPage();
 
     // setting content
